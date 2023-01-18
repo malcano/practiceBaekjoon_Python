@@ -1,6 +1,5 @@
 import sys
-
-
+# solution #1018
 def solution():
     N, M = map(int, input().split())
     board = []
@@ -10,3 +9,4 @@ def solution():
     #chessboard = [list(map(str, sys.stdin.readline().split())) for _ in range(N)]
     print([_ for _ in board])
     # for _ in chessboard:
+
