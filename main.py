@@ -19,7 +19,7 @@ def load_module(module_number):
 if __name__ == '__main__':
 
     #######################
-    solution_number = 1003 # input solution number
+    solution_number = 11497 # input solution number
     #######################
     # getattr(load_module(solution_number), f'sol{str(solution_number)}')()
     getattr(load_module(solution_number), f'solution')()
