@@ -13,7 +13,7 @@ def solution():
         target.append(int(input())) # 케이스 값을 리스트에 저장
 
     for arg in target:# 케이스를 하나씩 꺼내온다
-        if arg > len(zero_save):# 해당 케이스에 대한 값이 리스트에 저장되어 있지 않다면
+        if arg >= len(zero_save):# 해당 케이스에 대한 값이 리스트에 저장되어 있지 않다면
             for index in range(len(zero_save), arg + 1):#없는 케이스를 만들어주자
                 # 0, 1의 호출 횟수는 피보나치 수열과 같은 패턴을 지닌다.
                 # zero save와 one save에 케이스를 미리 저장해주자
@@ -21,3 +21,5 @@ def solution():
                 one_save.append(one_save[index-1]+one_save[index-2])
         print(f"{zero_save[arg]} {one_save[arg]}")#저장되어 있는 케이스를 꺼내온다.
 
+
+#solution()
