@@ -18,14 +18,33 @@ def solution():
     print(visited)
 
     DFS(graph, V, visited)
+    BFS()
+
 def DFS(graph:list, v:int, visited:list):
+    """
+    DFS는 stack 자료구조를 활용하며, 재귀적으로 탐색한다
+    :param graph: 노드가 연결하는 다른 노드 리스트
+    :param v: 방문하는 노드 번호
+    :param visited: 방문 여부를 저장하는 boolean 리스트
+    :return: void
+    """
     visited[v] = True # 이번에 방문한 node를 방문한 노드로 변경
     print(v, end=" ") # 방문한 node를 print
     for _ in graph[v]: #방문한 node가 연결하는 node를 탐색
         if not visited[_]:#해당 노드가 방문하지 않은 노드이면
             DFS(graph, _ , visited) #노드 방문
 
-def DFS():
+def DFS_Stack(graph, v, visited):
+    print(v, end= " ")
+    stack = []
+    for _ in graph[v]:
+        stack.append()
+
+
+
+
+def BFS():
+
     return
 
 
