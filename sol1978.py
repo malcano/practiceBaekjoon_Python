@@ -13,4 +13,4 @@ def solution():
     for _ in num_list:
         if isPrime[_]:
             count+=1
-    print(count)
+
