@@ -13,7 +13,7 @@ if __name__ == '__main__':
     #######################
     solution_number = 2798 # input solution number
     #######################
-    print(f"console activate, solution num: {solution_number}")
+    print(f"console activate, solution num: {solution_number}") #몇 번 문제 푸는지 알려주는 콘솔 프린트 추가
 
     getattr(load_module(solution_number), f'solution')()
 
