@@ -11,7 +11,7 @@ def load_module(module_number):
 if __name__ == '__main__':
 
     #######################
-    solution_number = 4153 # input solution number
+    solution_number = 9012 # input solution number
     #######################
     print(f"console activate, solution num: {solution_number}") #몇 번 문제 푸는지 알려주는 콘솔 프린트 추가
 
